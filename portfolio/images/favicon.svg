@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Dark background circle -->
+  <rect width="64" height="64" rx="14" fill="#0d0d14"/>
+  <!-- Pink left border accent -->
+  <rect x="0" y="0" width="5" height="64" rx="2" fill="#ff2d78"/>
+  <!-- Bold "V" letter -->
+  <text x="34" y="47" font-family="Poppins, Arial, sans-serif" font-size="38" font-weight="800"
+        fill="#ff2d78" text-anchor="middle" letter-spacing="-1">V</text>
+</svg>
