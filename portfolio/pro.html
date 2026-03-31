@@ -18,9 +18,9 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="pro.html" class="active">Projects</a></li>
                 <li><a href="cer.html">Certificates</a></li>
-                <li><a href="cont.html">Contact</a></li>
+                <li><a href="con.html">Contact</a></li>
             </ul>
-            <a href="cont.html" class="btn-hire">Hire Me</a>
+            <a href="con.html" class="btn-hire">Hire Me</a>
             <button class="hamburger" onclick="toggleMenu()" aria-label="menu">
                 <span></span><span></span><span></span>
             </button>
@@ -29,8 +29,8 @@
             <a href="about.html">About</a>
             <a href="pro.html" class="active">Projects</a>
             <a href="cer.html">Certificates</a>
-            <a href="cont.html">Contact</a>
-            <a href="cont.html" class="btn-hire">Hire Me</a>
+            <a href="con.html">Contact</a>
+            <a href="con.html" class="btn-hire">Hire Me</a>
         </div>
     </nav>
 
@@ -39,7 +39,7 @@
         <div class="page-hero-inner">
             <h1>My <span>Projects</span></h1>
             <p>Real-world Power Platform solutions I've built</p>
-            <div class="breadcrumb">
+            <div class="breadcrumb light-breadcrumb">
                 <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> <span>Projects</span>
             </div>
         </div>
@@ -49,129 +49,120 @@
     <section class="inner-section dark-section">
         <div class="container">
 
-            <!-- Filter Buttons -->
+            <!-- Filter Buttons
+                 FIX 1: Power Pages had data-filter="powerbi" — corrected to "powerpages"
+                 FIX 2: JS now reads space-separated data-cat so multi-tech cards filter correctly -->
             <div class="filter-row">
                 <button class="filter-btn active" data-filter="all">All</button>
                 <button class="filter-btn" data-filter="powerapps">Power Apps</button>
                 <button class="filter-btn" data-filter="automate">Power Automate</button>
                 <button class="filter-btn" data-filter="powerbi">Power BI</button>
+                <button class="filter-btn" data-filter="powerpages">Power Pages</button>
             </div>
 
             <div class="projects-grid">
 
-                <div class="pro-card" data-cat="powerapps">
+                <!-- Card 1: Travel Management — powerapps + automate + powerpages -->
+                <div class="pro-card" data-cat="powerapps automate powerpages">
                     <div class="pro-card-top">
-                        <div class="pro-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <div class="pro-icon"><i class="fas fa-plane-departure"></i></div>
                         <div class="pro-tags">
                             <span>Power Apps</span>
-                            <span>SharePoint</span>
+                            <span>Dataverse</span>
+                            <span>Power Automate</span>
+                            <span>Power Pages</span>
                         </div>
                     </div>
-                    <h3>Employee Portal App</h3>
-                    <p>A full-featured employee self-service canvas app integrated with SharePoint and Power Automate approval workflows. Reduced HR request turnaround by 40%.</p>
+                    <h3>Travel Management Application</h3>
+                    <p>A full-featured employee travel request canvas app built on Dataverse with multi-level Power Automate approval workflows and real-time notifications. Vendors access a Power Pages portal to submit quotes and upload travel tickets directly.</p>
                     <div class="pro-footer">
-                        <div class="pro-links">
-                            <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="#"><i class="fab fa-github"></i> Source</a>
-                        </div>
-                        <span class="pro-year">2024</span>
+                        <span class="pro-year">2026</span>
                     </div>
                 </div>
 
+                <!-- Card 2: Resource Capacity Dashboard — powerbi -->
                 <div class="pro-card featured-card" data-cat="powerbi">
-                    <div class="featured-ribbon">⭐ Featured</div>
                     <div class="pro-card-top">
                         <div class="pro-icon"><i class="fas fa-chart-bar"></i></div>
                         <div class="pro-tags">
                             <span>Power BI</span>
                             <span>DAX</span>
-                            <span>Dataverse</span>
+                            <span>SQL</span>
                         </div>
                     </div>
-                    <h3>Sales Intelligence Dashboard</h3>
-                    <p>An interactive Power BI dashboard pulling data from 5+ sources, delivering real-time KPIs and predictive analytics. Used daily by the entire sales leadership team.</p>
+                    <h3>Resource Capacity &amp; Utilization Dashboard</h3>
+                    <p>An interactive Power BI dashboard that consolidates data from multiple sources to deliver real-time KPIs on team capacity, resource allocation, and utilization rates — helping management make data-driven staffing decisions.</p>
                     <div class="pro-footer">
-                        <div class="pro-links">
-                            <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="#"><i class="fab fa-github"></i> Source</a>
-                        </div>
-                        <span class="pro-year">2024</span>
+                        <span class="pro-year">2025</span>
                     </div>
                 </div>
 
-                <div class="pro-card" data-cat="automate">
+                <!-- Card 3: IT Helpdesk — powerapps + automate -->
+                <div class="pro-card" data-cat="powerapps automate">
                     <div class="pro-card-top">
-                        <div class="pro-icon"><i class="fas fa-robot"></i></div>
-                        <div class="pro-tags">
-                            <span>Power Automate</span>
-                            <span>Teams</span>
-                        </div>
-                    </div>
-                    <h3>IT Helpdesk Automation</h3>
-                    <p>Automated IT ticket triage and escalation flow reducing resolution time by 60%. Eliminated manual routing and integrated with Microsoft Teams for instant notifications.</p>
-                    <div class="pro-footer">
-                        <div class="pro-links">
-                            <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="#"><i class="fab fa-github"></i> Source</a>
-                        </div>
-                        <span class="pro-year">2023</span>
-                    </div>
-                </div>
-
-                <div class="pro-card" data-cat="powerapps">
-                    <div class="pro-card-top">
-                        <div class="pro-icon"><i class="fas fa-database"></i></div>
+                        <div class="pro-icon"><i class="fas fa-headset"></i></div>
                         <div class="pro-tags">
                             <span>Power Apps</span>
+                            <span>Power Automate</span>
+                            <span>SharePoint</span>
+                            <span>SPFx</span>
+                        </div>
+                    </div>
+                    <h3>IT Helpdesk</h3>
+                    <p>A Power Apps-based IT support portal with automated ticket triage and escalation via Power Automate, cutting resolution time by 60%. SharePoint stores ticket data and a custom SPFx web part surfaces the helpdesk directly inside Teams.</p>
+                    <div class="pro-footer">
+                        <span class="pro-year">2025</span>
+                    </div>
+                </div>
+
+                <!-- Card 4: Purchase Offer Management — powerapps + automate -->
+                <div class="pro-card" data-cat="powerapps automate">
+                    <div class="pro-card-top">
+                        <div class="pro-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+                        <div class="pro-tags">
+                            <span>Power Apps</span>
+                            <span>Power Automate</span>
                             <span>Dataverse</span>
                         </div>
                     </div>
-                    <h3>Inventory Management System</h3>
-                    <p>Model-driven Power App for tracking inventory across multiple warehouses with barcode scanning support and automated reorder notifications via Power Automate.</p>
+                    <h3>Purchase Offer Management System</h3>
+                    <p>A Canvas App where the purchase team raises offers and the sales team responds with pricing options — all tracked in Dataverse. Role-based access controls separate purchase and sales views, with automated notifications keeping both teams in sync.</p>
                     <div class="pro-footer">
-                        <div class="pro-links">
-                            <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="#"><i class="fab fa-github"></i> Source</a>
-                        </div>
-                        <span class="pro-year">2023</span>
+                        <span class="pro-year">2025</span>
                     </div>
                 </div>
 
-                <div class="pro-card" data-cat="automate">
+                <!-- Card 5: Leave Application — powerapps + automate -->
+                <div class="pro-card" data-cat="powerapps automate">
                     <div class="pro-card-top">
-                        <div class="pro-icon"><i class="fas fa-envelope-open-text"></i></div>
+                        <div class="pro-icon"><i class="fas fa-calendar-check"></i></div>
                         <div class="pro-tags">
+                            <span>Power Apps</span>
                             <span>Power Automate</span>
-                            <span>Outlook</span>
+                            <span>SharePoint</span>
                         </div>
                     </div>
-                    <h3>Leave Approval Workflow</h3>
-                    <p>End-to-end automated leave management flow with multi-level approval, email notifications, and calendar blocking. Deployed across 200+ employees.</p>
+                    <h3>Leave Application</h3>
+                    <p>An end-to-end leave management app with custom policy logic handling different leave types, accruals, and carry-forward rules. Power Automate drives multi-level approvals and email notifications, with SharePoint as the backend data store.</p>
                     <div class="pro-footer">
-                        <div class="pro-links">
-                            <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="#"><i class="fab fa-github"></i> Source</a>
-                        </div>
-                        <span class="pro-year">2023</span>
+                        <span class="pro-year">2025</span>
                     </div>
                 </div>
 
-                <div class="pro-card" data-cat="powerbi">
+                <!-- Card 6: Supply Chain — powerapps + automate -->
+                <div class="pro-card" data-cat="powerapps automate">
                     <div class="pro-card-top">
-                        <div class="pro-icon"><i class="fas fa-users-cog"></i></div>
+                        <div class="pro-icon"><i class="fas fa-truck-loading"></i></div>
                         <div class="pro-tags">
-                            <span>Power BI</span>
-                            <span>HR Analytics</span>
+                            <span>Power Apps</span>
+                            <span>Power Automate</span>
+                            <span>Dataverse</span>
                         </div>
                     </div>
-                    <h3>HR Analytics Report</h3>
-                    <p>Comprehensive HR analytics Power BI report covering headcount, attrition trends, performance distribution, and workforce demographics for executive review.</p>
+                    <h3>Supply Chain Management Application</h3>
+                    <p>A Model-Driven App for end-to-end supply chain operations built on Dataverse. Features custom client-side scripting for business rule enforcement, Power Automate flows for supplier notifications, and deep integrations with external ERP systems.</p>
                     <div class="pro-footer">
-                        <div class="pro-links">
-                            <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="#"><i class="fab fa-github"></i> Source</a>
-                        </div>
-                        <span class="pro-year">2024</span>
+                        <span class="pro-year">2026</span>
                     </div>
                 </div>
 
@@ -181,7 +172,7 @@
 
     <!-- ── FOOTER ── -->
     <footer class="site-footer dark-footer">
-        <p>Designed &amp; Built by <span>Vengadesh</span> &copy; 2025</p>
+        <p>Designed &amp; Built by <span>Vengadesh</span> &copy; 2026</p>
     </footer>
 
     <script>
@@ -189,18 +180,17 @@
             document.getElementById('mobileMenu').classList.toggle('open');
         }
 
-        // Filter logic
+        // FIX: data-cat is now space-separated (e.g. "powerapps automate powerpages")
+        // Split into an array and check if the filter value is included — works for multi-tech cards
         document.querySelectorAll('.filter-btn').forEach(btn => {
             btn.addEventListener('click', () => {
                 document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
                 const filter = btn.dataset.filter;
                 document.querySelectorAll('.pro-card').forEach(card => {
-                    if (filter === 'all' || card.dataset.cat === filter) {
-                        card.style.display = 'flex';
-                    } else {
-                        card.style.display = 'none';
-                    }
+                    const categories = card.dataset.cat.split(' ');
+                    const show = filter === 'all' || categories.includes(filter);
+                    card.style.display = show ? 'flex' : 'none';
                 });
             });
         });
