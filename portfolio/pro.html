@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Vengadesh</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="page-inner">
+
+    <!-- ── NAV ── -->
+    <nav class="navbar scrolled">
+        <div class="nav-inner">
+            <a href="index.html" class="logo">vengadesh</a>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="pro.html" class="active">Projects</a></li>
+                <li><a href="cer.html">Certificates</a></li>
+                <li><a href="cont.html">Contact</a></li>
+            </ul>
+            <a href="cont.html" class="btn-hire">Hire Me</a>
+            <button class="hamburger" onclick="toggleMenu()" aria-label="menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="about.html">About</a>
+            <a href="pro.html" class="active">Projects</a>
+            <a href="cer.html">Certificates</a>
+            <a href="cont.html">Contact</a>
+            <a href="cont.html" class="btn-hire">Hire Me</a>
+        </div>
+    </nav>
+
+    <!-- ── PAGE HEADER ── -->
+    <div class="page-hero dark-hero">
+        <div class="page-hero-inner">
+            <h1>My <span>Projects</span></h1>
+            <p>Real-world Power Platform solutions I've built</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> <span>Projects</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ── PROJECTS ── -->
+    <section class="inner-section dark-section">
+        <div class="container">
+
+            <!-- Filter Buttons -->
+            <div class="filter-row">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="powerapps">Power Apps</button>
+                <button class="filter-btn" data-filter="automate">Power Automate</button>
+                <button class="filter-btn" data-filter="powerbi">Power BI</button>
+            </div>
+
+            <div class="projects-grid">
+
+                <div class="pro-card" data-cat="powerapps">
+                    <div class="pro-card-top">
+                        <div class="pro-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <div class="pro-tags">
+                            <span>Power Apps</span>
+                            <span>SharePoint</span>
+                        </div>
+                    </div>
+                    <h3>Employee Portal App</h3>
+                    <p>A full-featured employee self-service canvas app integrated with SharePoint and Power Automate approval workflows. Reduced HR request turnaround by 40%.</p>
+                    <div class="pro-footer">
+                        <div class="pro-links">
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#"><i class="fab fa-github"></i> Source</a>
+                        </div>
+                        <span class="pro-year">2024</span>
+                    </div>
+                </div>
+
+                <div class="pro-card featured-card" data-cat="powerbi">
+                    <div class="featured-ribbon">⭐ Featured</div>
+                    <div class="pro-card-top">
+                        <div class="pro-icon"><i class="fas fa-chart-bar"></i></div>
+                        <div class="pro-tags">
+                            <span>Power BI</span>
+                            <span>DAX</span>
+                            <span>Dataverse</span>
+                        </div>
+                    </div>
+                    <h3>Sales Intelligence Dashboard</h3>
+                    <p>An interactive Power BI dashboard pulling data from 5+ sources, delivering real-time KPIs and predictive analytics. Used daily by the entire sales leadership team.</p>
+                    <div class="pro-footer">
+                        <div class="pro-links">
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#"><i class="fab fa-github"></i> Source</a>
+                        </div>
+                        <span class="pro-year">2024</span>
+                    </div>
+                </div>
+
+                <div class="pro-card" data-cat="automate">
+                    <div class="pro-card-top">
+                        <div class="pro-icon"><i class="fas fa-robot"></i></div>
+                        <div class="pro-tags">
+                            <span>Power Automate</span>
+                            <span>Teams</span>
+                        </div>
+                    </div>
+                    <h3>IT Helpdesk Automation</h3>
+                    <p>Automated IT ticket triage and escalation flow reducing resolution time by 60%. Eliminated manual routing and integrated with Microsoft Teams for instant notifications.</p>
+                    <div class="pro-footer">
+                        <div class="pro-links">
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#"><i class="fab fa-github"></i> Source</a>
+                        </div>
+                        <span class="pro-year">2023</span>
+                    </div>
+                </div>
+
+                <div class="pro-card" data-cat="powerapps">
+                    <div class="pro-card-top">
+                        <div class="pro-icon"><i class="fas fa-database"></i></div>
+                        <div class="pro-tags">
+                            <span>Power Apps</span>
+                            <span>Dataverse</span>
+                        </div>
+                    </div>
+                    <h3>Inventory Management System</h3>
+                    <p>Model-driven Power App for tracking inventory across multiple warehouses with barcode scanning support and automated reorder notifications via Power Automate.</p>
+                    <div class="pro-footer">
+                        <div class="pro-links">
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#"><i class="fab fa-github"></i> Source</a>
+                        </div>
+                        <span class="pro-year">2023</span>
+                    </div>
+                </div>
+
+                <div class="pro-card" data-cat="automate">
+                    <div class="pro-card-top">
+                        <div class="pro-icon"><i class="fas fa-envelope-open-text"></i></div>
+                        <div class="pro-tags">
+                            <span>Power Automate</span>
+                            <span>Outlook</span>
+                        </div>
+                    </div>
+                    <h3>Leave Approval Workflow</h3>
+                    <p>End-to-end automated leave management flow with multi-level approval, email notifications, and calendar blocking. Deployed across 200+ employees.</p>
+                    <div class="pro-footer">
+                        <div class="pro-links">
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#"><i class="fab fa-github"></i> Source</a>
+                        </div>
+                        <span class="pro-year">2023</span>
+                    </div>
+                </div>
+
+                <div class="pro-card" data-cat="powerbi">
+                    <div class="pro-card-top">
+                        <div class="pro-icon"><i class="fas fa-users-cog"></i></div>
+                        <div class="pro-tags">
+                            <span>Power BI</span>
+                            <span>HR Analytics</span>
+                        </div>
+                    </div>
+                    <h3>HR Analytics Report</h3>
+                    <p>Comprehensive HR analytics Power BI report covering headcount, attrition trends, performance distribution, and workforce demographics for executive review.</p>
+                    <div class="pro-footer">
+                        <div class="pro-links">
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#"><i class="fab fa-github"></i> Source</a>
+                        </div>
+                        <span class="pro-year">2024</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+    <footer class="site-footer dark-footer">
+        <p>Designed &amp; Built by <span>Vengadesh</span> &copy; 2025</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('mobileMenu').classList.toggle('open');
+        }
+
+        // Filter logic
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const filter = btn.dataset.filter;
+                document.querySelectorAll('.pro-card').forEach(card => {
+                    if (filter === 'all' || card.dataset.cat === filter) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

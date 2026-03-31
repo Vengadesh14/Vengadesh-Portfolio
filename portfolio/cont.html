@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Vengadesh</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="page-inner">
+
+    <!-- ── NAV ── -->
+    <nav class="navbar scrolled">
+        <div class="nav-inner">
+            <a href="index.html" class="logo">vengadesh</a>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="pro.html">Projects</a></li>
+                <li><a href="cer.html">Certificates</a></li>
+                <li><a href="cont.html" class="active">Contact</a></li>
+            </ul>
+            <a href="cont.html" class="btn-hire">Hire Me</a>
+            <button class="hamburger" onclick="toggleMenu()" aria-label="menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="about.html">About</a>
+            <a href="pro.html">Projects</a>
+            <a href="cer.html">Certificates</a>
+            <a href="cont.html" class="active">Contact</a>
+            <a href="cont.html" class="btn-hire">Hire Me</a>
+        </div>
+    </nav>
+
+    <!-- ── PAGE HEADER ── -->
+    <div class="page-hero dark-hero">
+        <div class="page-hero-inner">
+            <h1>Contact <span>Me</span></h1>
+            <p>Have a project or opportunity? Let's talk!</p>
+            <div class="breadcrumb light-breadcrumb">
+                <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> <span>Contact</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ── CONTACT CONTENT ── -->
+    <section class="inner-section dark-section">
+        <div class="container">
+
+            <div class="contact-wrap">
+
+                <!-- LEFT: Info -->
+                <div class="contact-info-col">
+                    <p class="section-tag light-tag">Get In Touch</p>
+                    <h2 class="contact-heading">Let's Build Something <span>Great Together</span></h2>
+                    <p class="contact-intro">
+                        I'm open to freelance projects, full-time roles, and collaboration opportunities. Whether you have a Power Platform idea or want to automate your business processes, I'd love to hear from you.
+                    </p>
+
+                    <div class="contact-detail-list">
+                        <div class="contact-detail-item">
+                            <div class="contact-icon-box">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-detail-text">
+                                <strong>Email</strong>
+                                <a href="mailto:vengadesh@email.com">vengadeshav47@email.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="contact-icon-box">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-detail-text">
+                                <strong>Phone</strong>
+                                <a href="tel:+919626379366">+91 9626379366</a>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="contact-icon-box">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-detail-text">
+                                <strong>Location</strong>
+                                <p>Chennai, Tamil Nadu, India</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="contact-icon-box">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-detail-text">
+                                <strong>Availability</strong>
+                                <p>Mon – Fri, 10 AM – 6 PM IST</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-socials">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- RIGHT: Form -->
+                <div class="contact-form-col">
+                    <form class="contact-form" onsubmit="handleSubmit(event)">
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label>Your Name</label>
+                                <input type="text" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-field">
+                                <label>Your Email</label>
+                                <input type="email" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <label>Phone (Optional)</label>
+                            <input type="tel" placeholder="+91 00000 00000">
+                        </div>
+                        <div class="form-field">
+                            <label>Subject</label>
+                            <input type="text" placeholder="Project Inquiry / Job Opportunity" required>
+                        </div>
+                        <div class="form-field">
+                            <label>Message</label>
+                            <textarea rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary form-submit">
+                            Send Message <i class="fas fa-paper-plane"></i>
+                        </button>
+                        <div class="form-success" id="formSuccess">
+                            <i class="fas fa-check-circle"></i> Your message has been sent! I'll get back to you soon.
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+    <footer class="site-footer dark-footer">
+        <p>Designed &amp; Built by <span>Vengadesh</span> &copy; 2025</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('mobileMenu').classList.toggle('open');
+        }
+        function handleSubmit(e) {
+            e.preventDefault();
+            const msg = document.getElementById('formSuccess');
+            msg.style.display = 'flex';
+            e.target.reset();
+            setTimeout(() => msg.style.display = 'none', 5000);
+        }
+    </script>
+</body>
+</html>

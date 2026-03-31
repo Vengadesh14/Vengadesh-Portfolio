@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vengadesh | Power Platform Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="page-home">
+
+    <!-- ── NAV ── -->
+    <nav class="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="logo">vengadesh</a>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="pro.html">Projects</a></li>
+                <li><a href="cer.html">Certificates</a></li>
+                <li><a href="cont.html">Contact</a></li>
+            </ul>
+            <a href="cont.html" class="btn-hire">Hire Me</a>
+            <button class="hamburger" onclick="toggleMenu()" aria-label="menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="about.html">About</a>
+            <a href="pro.html">Projects</a>
+            <a href="cer.html">Certificates</a>
+            <a href="cont.html">Contact</a>
+            <a href="cont.html" class="btn-hire">Hire Me</a>
+        </div>
+    </nav>
+
+    <!-- ── HERO ── -->
+    <section class="hero">
+        <div class="hero-left">
+            <p class="hero-greeting">Hello, World! 👋</p>
+            <h1 class="hero-title">
+                Hey I'm<br>
+                <span class="typed-name" id="typedText">vengadesh</span>
+            </h1>
+            <p class="hero-role">⚡ Power Platform Developer</p>
+            <div class="hero-cta">
+                <a href="pro.html" class="btn-primary">View My Work</a>
+                <a href="cont.html" class="btn-secondary">Let's Talk</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat"><strong>1+</strong><span>Years Exp.</span></div>
+                <div class="stat-sep"></div>
+                <div class="stat"><strong>10+</strong><span>Projects</span></div>
+                <div class="stat-sep"></div>
+                <div class="stat"><strong>3</strong><span>Certificates</span></div>
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <div class="hero-img-wrap">
+                <div class="img-glow"></div>
+                <img src="images/bcg.png" alt="Vengadesh" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 60);
+        });
+        function toggleMenu() {
+            document.getElementById('mobileMenu').classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

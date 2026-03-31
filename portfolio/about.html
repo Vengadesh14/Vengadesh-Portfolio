@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Vengadesh</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="page-inner">
+
+    <!-- ── NAV ── -->
+    <nav class="navbar scrolled">
+        <div class="nav-inner">
+            <a href="index.html" class="logo">vengadesh</a>
+            <ul class="nav-links">
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="pro.html">Projects</a></li>
+                <li><a href="cer.html">Certificates</a></li>
+                <li><a href="cont.html">Contact</a></li>
+            </ul>
+            <a href="cont.html" class="btn-hire">Hire Me</a>
+            <button class="hamburger" onclick="toggleMenu()" aria-label="menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="about.html" class="active">About</a>
+            <a href="pro.html">Projects</a>
+            <a href="cer.html">Certificates</a>
+            <a href="cont.html">Contact</a>
+            <a href="cont.html" class="btn-hire">Hire Me</a>
+        </div>
+    </nav>
+
+    <!-- ── PAGE HEADER ── -->
+    <div class="page-hero">
+        <div class="page-hero-inner">
+            <h1>About <span>Me</span></h1>
+            <p>A little bit about who I am and what I do</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> <span>About</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ── ABOUT CONTENT ── -->
+    <section class="inner-section">
+        <div class="container">
+
+            <div class="about-grid">
+                <!-- Image Column -->
+                <div class="about-img-col">
+                    <div class="about-img-frame">
+                        <img src="images/bcg.png" alt="Vengadesh">
+                        <div class="exp-badge">
+                            <strong>1+</strong>
+                            <span>Years Exp.</span>
+                        </div>
+                    </div>
+                    <div class="social-row">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Text Column -->
+                <div class="about-text-col">
+                    <p class="section-tag">Who Am I?</p>
+                    <h2 class="about-heading">Power Platform Developer &amp; <span>Low-Code Innovator</span></h2>
+                    <p class="about-desc">
+                        I'm a passionate <strong>Power Platform Developer</strong> with expertise in building intelligent, automated business solutions using Microsoft's low-code ecosystem. I specialize in turning complex business problems into elegant workflows that save time and drive value.
+                    </p>
+                    <p class="about-desc">
+                        From Power Apps canvas apps to Power Automate flows and Power BI dashboards — I craft end-to-end solutions that real teams rely on every day.
+                    </p>
+
+                    <!-- Tabs -->
+                    <div class="tab-bar">
+                        <button class="tab-btn active" data-tab="skills">Skills</button>
+                        <button class="tab-btn" data-tab="experience">Experience</button>
+                        <button class="tab-btn" data-tab="education">Education</button>
+                    </div>
+
+                    <div class="tab-panel active" id="skills">
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check-circle"></i> Power Apps (Canvas &amp; Model-driven)</li>
+                            <li><i class="fas fa-check-circle"></i> Power Automate &amp; Power Pages</li>
+                            <li><i class="fas fa-check-circle"></i> Power BI &amp; Data Visualization</li>
+                            <li><i class="fas fa-check-circle"></i> SharePoint &amp; Dataverse</li>
+                            <li><i class="fas fa-check-circle"></i> Microsoft 365</li>
+                            <li><i class="fas fa-check-circle"></i> JavaScript, HTML &amp; CSS</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-panel" id="experience">
+                        <ul class="timeline-list">
+                            <li>
+                                <div class="tl-dot"></div>
+                                <div class="tl-body">
+                                    <strong>Power Platform Developer</strong>
+                                    <em>Cetas Information Technology, Chennai &mdash; 2025–Present</em>
+                                    <p>Building end-to-end Power Platform solutions for enterprise clients.</p>
+                                </div>
+                            </li>
+                         
+                        </ul>
+                    </div>
+
+                    <div class="tab-panel" id="education">
+                        <ul class="timeline-list">
+                            <li>
+                                <div class="tl-dot"></div>
+                                <div class="tl-body">
+                                    <strong>B.E. Computer Science &amp; Engineering</strong>
+                                    <em>Government college of Engineering, Thanjavur &mdash; 2020–2024</em>
+                                    <p>Graduated with first class. Focused on software development and cloud computing.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="about-actions">
+                        <a href="#" class="btn-primary" download>Download CV <i class="fas fa-download"></i></a>
+                        <a href="cont.html" class="btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Progress -->
+            <div class="skills-progress-section">
+                <p class="section-tag" style="text-align:center;">My Proficiency</p>
+                <h2 class="section-heading" style="text-align:center;">Technical <span>Skills</span></h2>
+
+                <div class="progress-grid">
+                    <div class="progress-item">
+                        <div class="progress-label"><span>Power Apps</span><span>90%</span></div>
+                        <div class="progress-bar"><div class="progress-fill" style="width:90%"></div></div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="progress-label"><span>Power Automate</span><span>85%</span></div>
+                        <div class="progress-bar"><div class="progress-fill" style="width:85%"></div></div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="progress-label"><span>Power BI</span><span>80%</span></div>
+                        <div class="progress-bar"><div class="progress-fill" style="width:80%"></div></div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="progress-label"><span>SharePoint</span><span>88%</span></div>
+                        <div class="progress-bar"><div class="progress-fill" style="width:88%"></div></div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="progress-label"><span>Power Pages</span><span>75%</span></div>
+                        <div class="progress-bar"><div class="progress-fill" style="width:75%"></div></div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="progress-label"><span>JavaScript / HTML / CSS</span><span>70%</span></div>
+                        <div class="progress-bar"><div class="progress-fill" style="width:70%"></div></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+    <footer class="site-footer">
+        <p>Designed &amp; Built by <span>Vengadesh</span> &copy; 2025</p>
+    </footer>
+
+    <script>
+        // Tab switching
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+                btn.classList.add('active');
+                document.getElementById(btn.dataset.tab).classList.add('active');
+            });
+        });
+        function toggleMenu() {
+            document.getElementById('mobileMenu').classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
