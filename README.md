@@ -69,7 +69,7 @@ portfolio/
 
 - HTML5
 - CSS3 (Grid, Flexbox, CSS Variables, Animations)
-- Vanilla JavaScript
+- JavaScript
 - Font Awesome 6 (icons)
 - Google Fonts — Poppins
 
